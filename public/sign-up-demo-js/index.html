@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body>
+    <h2>Sign Up</h2>
+    <div class="center">
+      <input
+        type="text"
+        id="nameText"
+        placeholder="Enter Name"
+        onfocus="this.value=null"
+      />
+      <input
+        type="text"
+        id="courseText"
+        placeholder="Enter Major"
+        onfocus="this.value=null"
+      />
+      <input
+        type="text"
+        id="idText"
+        placeholder="Enter ID No."
+        onfocus="this.value=null"
+      />
+    </div>
+    <div id="mainbuttons">
+      <button class="add" onclick="addFunction()">Add Member</button>
+      <button class="undo" onclick="undoEntry()">Undo Last Entry</button>
+      <button class="clearAll" onclick="deleteRows()">Clear List</button>
+    </div>
+    <p></p>
+    <table id="userTable">
+      <tr>
+        <th><h2>Name</h2></th>
+        <th><h2>Major</h2></th>
+        <th><h2>ID Number</h2></th>
+      </tr>
+    </table>
+
+    <script src="main.js"></script>
+  </body>
+</html>
