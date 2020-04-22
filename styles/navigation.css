@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  float: right;
+  padding-right: 5%;
+}
+ul.nav-bar a {
+  color: #000;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+ul.nav-bar li {
+  display: inline;
+  position: relative;
+}
+ul.nav-bar li:hover,
+ul.nav-bar li:focus {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: rgb(211, 211, 211);
+  border-radius: 5%;
+}
+nav a.on-page {
+  padding-top: 2%;
+  border-bottom: 2px solid rgb(49, 49, 49);
+  padding-bottom: 5px;
+}

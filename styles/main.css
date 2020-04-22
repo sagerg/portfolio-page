@@ -1,0 +1,25 @@
+body {
+  font-family: arial, sans-serif;
+}
+h1,
+p {
+  padding: 1%;
+}
+main li {
+  padding-bottom: 0.5%;
+  padding-right: 4%;
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+}
+.project-link:hover a,
+.project-link:focus a,
+.contactdet:hover a,
+.contactdet:focus a {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: rgb(211, 211, 211);
+}
