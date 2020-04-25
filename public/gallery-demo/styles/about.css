@@ -10,7 +10,8 @@ main p {
   font-size: 1.4em;
   padding: 0 auto;
   clear: both;
-  background-color: rgb(216, 216, 216);
+  background-color: #ababab;
+  border-radius: 25%;
 }
 .contactdet a,
 .color-p,
@@ -24,7 +25,7 @@ main p {
 .credit a:hover,
 .credit a:focus {
   color: #fff;
-  background-color: #000;
+  background-color: #8d2663;
 }
 /*
     CSS for photos.

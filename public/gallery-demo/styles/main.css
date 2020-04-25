@@ -4,7 +4,7 @@
 
 body {
   font-family: arial, sans-serif;
-  background-color: #fdfff7;
+  background-color: #e0e0e0; /*fdfff7;*/
 
   /* CSS for background. Below is CSS if you want
    to put an image for the background as well */
@@ -31,24 +31,6 @@ body {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center; */
 
   /* set height differences between rows */
   height: 75vh;
@@ -98,24 +80,6 @@ body {
 .box:hover {
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.4);
 }
-
-/* CSS for spotify frame
-    and sets border photo effect */
-.spotify iframe {
-  margin: 5%;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background: #fffefa;
-}
-
-/* CSS for the corny message I put last min */
-.message {
-  float: right;
-  padding: 5%;
-  margin: 5%;
-}
-
 .banner {
   height: 100px;
   line-height: 100px;
