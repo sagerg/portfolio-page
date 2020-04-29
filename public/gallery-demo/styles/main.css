@@ -54,7 +54,8 @@ body {
   -ms-flex: none;
   flex: none;
   height: auto;
-  width: 20%;
+  /* set size of photos */
+  width: 25%;
   /* sets padding to create instax/photo effect */
   padding-top: 10px;
   padding-left: 10px;
@@ -74,9 +75,6 @@ body {
 }
 
 /* set max width for photos */
-.box img {
-  width: 100%;
-}
 .box:hover {
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.4);
 }
