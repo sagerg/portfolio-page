@@ -6,12 +6,14 @@ p {
   padding: 1%;
 }
 main li {
-  padding-bottom: 0.5%;
+  padding-bottom: 0.2cm;
   padding-right: 4%;
   list-style-type: none;
 }
-a:link {
+a:link,
+a:visited {
   text-decoration: none;
+  color: #00328f;
 }
 .project-link:hover a,
 .project-link:focus a,
