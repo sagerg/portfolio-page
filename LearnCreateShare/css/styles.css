@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.bnr {
+  margin-top: 2cm;
+  position: relative;
+  text-align: center;
+  color: #000;
+  margin-bottom: 100px;
+}
+.devices {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  width: 30%;
+  /* float: left; */
+  padding: 0.5%;
+  margin: auto 5% 5%;
+  background-color: #fff;
+}
+.devices:hover {
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.devices img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+.description {
+  float: right;
+  margin-right: 10%;
+}
