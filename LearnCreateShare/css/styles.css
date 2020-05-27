@@ -21,6 +21,7 @@ body {
   margin-bottom: 100px;
   color: rgb(192, 45, 51);
 }
+/* CSS for all img containers */
 .img-contain {
   margin-bottom: 30px;
   padding: 90px 0 10px;
@@ -39,9 +40,20 @@ body {
   margin-right: 5%;
   font-size: 18px;
 }
-/* 
-    CSS for the buttons in the website.
-*/
+.inline-styles-custom {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(255, 112, 117); /* slightly lighter red */
+}
+.end {
+  margin: 10%;
+  font-size: 18px;
+}
+/* CSS for all links */
+a {
+  color: rgb(192, 45, 51);
+}
+/* CSS for the buttons in the website */
 .draw-border {
   box-shadow: inset 0 0 0 4px rgb(192, 45, 51);
   color: rgb(192, 45, 51);
@@ -85,13 +97,57 @@ body {
 .btn a {
   color: inherit;
 }
-.end {
-  margin: 10%;
-  font-size: 18px;
+/* CSS for spinner https://tobiasahlin.com/spinkit/ */
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
 }
-a {
-  color: rgb(192, 45, 51);
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(192, 45, 51);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+/* CSS for responsive web design */
 @media only screen and (max-width: 1000px) {
   .devices {
     float: none;
