@@ -21,6 +21,10 @@ body {
   margin-bottom: 100px;
   color: rgb(192, 45, 51);
 }
+.tag {
+  text-align: center;
+  margin: 2cm;
+}
 /* CSS for all img containers */
 .img-contain {
   margin-bottom: 30px;
