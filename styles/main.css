@@ -15,6 +15,7 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+/* set color of links in body */
 a:link,
 a:visited {
   color: #00328f;
@@ -39,6 +40,7 @@ a:visited {
 .contactdet {
   margin-top: 1cm;
 }
+/* hover effects for links in body */
 .project-link:hover a,
 .project-link:focus a,
 .contactdet:hover a,
@@ -55,7 +57,7 @@ a:visited {
   padding-left: 25%;
   padding-right: 25%;
 }
-
+/* for mobile and tablets */
 @media only screen and (max-width: 767px) {
   .project-struct,
   .about-desc,
