@@ -1,206 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Small website to show a few projects and short scripts written in several programming languages"
-    />
-    <meta name="keywords" content="Personal, Projects, Portfolio" />
-    <meta name="author" content="Sage Garcia" />
+    <title></title>
+    <meta name="description" content="portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/navigation.css" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <nav role="navigation">
-      <ul class="nav-bar">
-        <li><a href="index.html" class="on-page">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-      </ul>
-    </nav>
-    <main>
-      <div class="banner">
-        <h1>projects</h1>
+    <!-- Add your site or application content here -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mb-5 shadow-sm"
+    >
+      <a class="navbar-brand" href="/index.html">. . /</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
       </div>
-      <ul class="project-struct">
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://phpmysql.howardcc.edu/Users/sgarcia6599/"
-            target="_blank"
-            >Final Project CMSY-168: The Health Journal</a
-          >
-          <ul>
-            <li class="project-description">
-              This was the final course project in my web development class. We
-              were tasked to create a static website from the ground-up without
-              the aid of javascript frameworks or css bootstrap.
-            </li>
-          </ul>
+    </nav>
+
+    <main class="container mb-5">
+      <code>$ cat /usr/local/bin/welcome.md</code>
+      <h1 class="mb-5">
+        hi. i'm sage...<span class="blinking-span-el text-primary">|</span>
+      </h1>
+      <code>$ man hello-exec</code>
+      <h3>I ...</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          am a CS undergrad interested in:
+          <strong>software computing, data science, UI/UX design</strong>, and
+          anything else tech.
         </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a href="/LearnCreateShare" target="_blank"
-            >Mini Project: Presenting AppleCare Tips</a
-          >
-          <ul>
-            <li class="project-description">
-              Side project for my part-time job at Apple laying out public
-              AppleCare info. The content is aimed at my co-technicians who may
-              want a hub for all info without needing to navigate the official
-              Apple website.
-            </li>
-          </ul>
+        <li class="list-group-item">
+          have worked with front end tools extensively on past projects like:
+          <strong>css3, bootstrap, sass, jquery, node</strong>, etc.
         </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a href="https://github.com/sagerg/cmd-line-tools" target="_blank">
-            CLI Tools: Web Searching, Password Data Serialization</a
-          >
-          <ul>
-            <li class="project-description">
-              Collection of CLI utility tools written in C++ for quick web
-              searches and convenient password management. Passwords are
-              encrypted using the xor operator and uses a unique string as the
-              hash key.
-            </li>
-            <li class="footnote">
-              &#8211; The idea originally came from this small project:
-              <a href="https://github.com/sagerg/quick-search" target="_blank"
-                >quick-search</a
-              >
-            </li>
-          </ul>
+        <li class="list-group-item">
+          am focusing on learning new tech at the moment with:
+          <strong>react, angular, vue, k8s, docker, postgres</strong>, etc.
         </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://web.archive.org/web/20180203083122/http:/siklab.org.ph/"
-            target="_blank"
-          >
-            2018 Promotional Website for Siklab Pilipinas</a
-          >
-          <ul>
-            <li class="project-description">
-              I was a web designer in the web dev team that designed the 2018
-              website of a student-run organization from the Philippines for
-              their annual youth assembly project.
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://github.com/sagerg/cc-projects-mini/tree/master/blackjack-console"
-            target="_blank"
-          >
-            Console BlackJack</a
-          >
-          <ul>
-            <li class="project-description">
-              Playable blackjack in terminal written in java.
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://github.com/sagerg/cc-projects-mini/tree/master/CS21"
-            target="_blank"
-          >
-            CS21 Project: Social App</a
-          >
-          <ul>
-            <li class="project-description">
-              Console-based app mimicking social media written in csharp.
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a href="public/gallery-demo/index.html" target="_blank"
-            >Sample Photo Gallery</a
-          >
-          <ul>
-            <li class="project-description">
-              Example of a web photo gallery that uses js to modify scroll
-              behavior and speed of image elements.
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a href="public/sign-up-demo-js/index.html" target="_blank"
-            >Sample Sign Up Sheet: Dynamic DOM
-          </a>
-          <ul>
-            <li class="project-description">
-              Sign-up form built from HTML and JS. Displays entries in a dynamic
-              table that changes depending on the number of entries. Provides
-              naive implementation of CRUD operations.
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://github.com/sagerg/solved-leetcode-archive"
-            target="_blank"
-            >LeetCode Solutions</a
-          >
-          <ul>
-            <li class="project-description">
-              Collection of my accepted submissions for several LeetCode
-              questions. List is always constantly updated as I solve more
-              questions in the future.
-            </li>
-            <li class="footnote">
-              &#8211; Try them yourself:
-              <a href="https://leetcode.com/problemset/all/" target="_blank"
-                >LeetCode</a
-              >
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://github.com/sagerg/project-euler-archive"
-            target="_blank"
-            >Project Euler Solutions</a
-          >
-          <ul>
-            <li class="project-description">
-              Collection of my submissions for Project Euler's archived
-              problems. Written in HTML for easy viewing in a browser.
-            </li>
-            <li class="footnote">
-              &#8211; Try them yourself:
-              <a href="https://projecteuler.net/archives" target="_blank"
-                >Project Euler Archive</a
-              >
-            </li>
-          </ul>
-        </li>
-        <!-- project divider -->
-        <li class="project-link">
-          <a
-            href="https://github.com/sagerg/basic-sorting-algos"
-            target="_blank"
-            >Basic Sorting Algorithms</a
-          >
-          <ul>
-            <li class="project-description">
-              My implementations of sorting algorithms commonly introduced in
-              introductory CS courses.
-            </li>
-          </ul>
+        <li class="list-group-item">
+          am also working on my back-end skills using:
+          <strong>cpp, java, python, bash, linux</strong>, etc.
         </li>
       </ul>
+      <code>:q</code>
     </main>
+
+    <section class="container mt-5 bg-dark">
+      <p class="h1 mb-5 pt-3 text-center text-light">. . / projects</p>
+      <div class="card-deck">
+        <!-- siklab project display -->
+        <div class="card">
+          <img src="/img/siklab-proto.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Design: Youth Assembly 2018</h5>
+            <p class="card-text">
+              <a href="https://siklab.org.ph">Siklab Pilipinas'</a> yearly
+              event: The Youth Assembly in the UN. I was fortunate enough to be
+              one of the key designers in their UX team developing their 2018
+              website.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Designed by end of 2017</small>
+          </div>
+        </div>
+        <!-- project display -->
+        <div class="card">
+          <img src="/img/pwmanager-proto.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Code: Password Manager</h5>
+            <p class="card-text">
+              Application written in C++. Uses data serialization according to
+              <a href="https://isocpp.org/wiki/faq/serialization"
+                >ISO standard</a
+              >
+              and encrypts it to a .txt using a string argument as a key.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"
+              ><a href="https://github.com/sagerg/cmd-line-tools"
+                >Github</a
+              ></small
+            >
+          </div>
+        </div>
+        <!-- cmsy 168 final project display -->
+        <div class="card">
+          <img src="/img/cmsy168-proto.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Project: Health Awareness</h5>
+            <p class="card-text">
+              This was a course project in my web development class. We were
+              tasked to create a website for a cause or with any theme of our
+              choosing.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"
+              ><a href="https://phpmysql.howardcc.edu/Users/sgarcia6599/"
+                >Live Website</a
+              ></small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-5 pb-5">
+        <a class="btn btn-outline-light" href="#" role="button"
+          >Check out list of projects...</a
+        >
+      </div>
+    </section>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
