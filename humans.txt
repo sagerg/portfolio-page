@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Sage Garcia -- Developer -- https://twitter.com/SageGarcia_
 
 # THANKS
 
-    <name>
+    HTML5 BoilerPlate Developer Team, Panayiotis Lipiridis for bootstrap-social CSS.
 
 # TECHNOLOGY COLOPHON
 
