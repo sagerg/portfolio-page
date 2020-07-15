@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>sagegarcia</title>
     <meta name="description" content="portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,6 +16,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-social.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <link
@@ -23,6 +24,10 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <meta name="theme-color" content="#fafafa" />
@@ -48,55 +53,58 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="#Overview">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#Projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Work Experience</a>
+            <a class="nav-link" href="#Work">Work Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#Connect">Connect</a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <main class="container mb-5">
-      <code>$ cat /usr/local/bin/welcome.md</code>
+    <!-- main banner -->
+    <main id="Overview" class="container mb-5">
+      <code>$ git commit -m "welcome message"</code>
       <h1 class="mb-5">
-        hi. i'm sage...<span class="blinking-span-el text-primary">|</span>
+        Hi, I'm Sage Garcia. I design web applications.<span
+          class="blinking-span-el text-primary"
+          >|</span
+        >
       </h1>
-      <code>$ man introduction</code>
-      <h3>I ...</h3>
+      <code>$ git log</code>
+      <h3>I am...</h3>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          am a CS undergrad interested in:
-          <strong>software computing, data science, UI/UX design</strong>, and
-          anything else tech.
+          a CS undergraduate interested in:
+          <strong>full-stack development, UI/UX design, and data science</strong
+          >.
         </li>
         <li class="list-group-item">
-          have worked with front end tools extensively on past projects like:
-          <strong>css3, bootstrap, sass, jquery, node</strong>, etc.
+          experienced with front-end tools that I've personally used on past
+          projects like:
+          <strong>CSS3, Bootstrap, SASS, jQuery, and Node</strong>.
         </li>
         <li class="list-group-item">
-          am focusing on learning new tech at the moment with:
-          <strong>react, angular, vue, k8s, docker, postgres</strong>, etc.
+          focused on learning new frameworks and tools at the moment with:
+          <strong>React, Angular, Vue.js, k8s, Docker, Postgres</strong>, etc.
         </li>
         <li class="list-group-item">
-          am also working on my back-end skills using:
-          <strong>cpp, java, python, bash, linux</strong>, etc.
+          proficient in several other programming languages such as:
+          <strong>C++, Java, Swift, and Python</strong>.
         </li>
       </ul>
-      <code>:q</code>
+      <code>:exit()</code>
     </main>
 
-    <section class="container mt-5 bg-dark">
-      <p class="h1 mb-5 pt-3 text-center text-light">. . / projects</p>
+    <!-- project section -->
+    <section id="Projects" class="container-fluid mt-5 bg-dark">
+      <p class="h1 mb-5 pt-3 text-center text-light">Notable projects.</p>
       <div class="card-deck">
         <!-- siklab project display -->
         <div class="card">
@@ -109,9 +117,6 @@
               one of the key designers in their UX team developing their 2018
               website.
             </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Designed by end of 2017</small>
           </div>
         </div>
         <!-- project display -->
@@ -126,12 +131,10 @@
               >
               and encrypts it to a .txt using a string argument as a key.
             </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"
-              ><a href="https://github.com/sagerg/cmd-line-tools"
-                >Github</a
-              ></small
+            <a
+              href="https://github.com/sagerg/cmd-line-tools"
+              class="btn btn-dark"
+              >GitHub</a
             >
           </div>
         </div>
@@ -139,28 +142,225 @@
         <div class="card">
           <img src="/img/cmsy168-proto.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Project: Health Awareness</h5>
+            <h5 class="card-title">Spreading Mental Health Awareness</h5>
             <p class="card-text">
               This was a course project in my web development class. We were
-              tasked to create a website for a cause or with any theme of our
-              choosing.
+              tasked to create a website for a cause with only HTML and CSS.
             </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"
-              ><a href="https://phpmysql.howardcc.edu/Users/sgarcia6599/"
-                >Live Website</a
-              ></small
+            <a
+              href="https://phpmysql.howardcc.edu/Users/sgarcia6599/"
+              class="btn btn-primary"
+              >Live Demo</a
             >
           </div>
         </div>
       </div>
+
+      <hr class="my-5 border-secondary" />
+      <p class="h2 mb-5 pt-3 text-center text-light">Other ventures.</p>
+
+      <div class="card-deck">
+        <div class="card">
+          <img src="/img/apple-proto.png" class="card-img" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Web app showcasing a variety of AppleCare services.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/java-proto.png" class="card-img" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Prototyping of client website using Sketch and InVision.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/gallery-proto.png" class="card-img" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Masonry photo gallery with custom scrolling speed using
+              JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/js-proto.png" class="card-img" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Art boards from initial prototype of my project TheHealthJournal.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="text-center pt-5 pb-5">
-        <a class="btn btn-outline-light" href="#" role="button"
-          >Check out list of projects...</a
+        <a
+          class="btn btn-outline-light"
+          href="https://github.com/sagerg"
+          role="button"
+          >More projects at my GitHub</a
         >
       </div>
     </section>
+    <!-- work experience -->
+    <section id="Work" class="container mt-5">
+      <p class="h1 mb-5 pt-3 text-center">
+        Professional experiences along the years.
+      </p>
+      <div class="div-with-left-border-line">
+        <hr class="my-5" />
+        <div class="custom-work-sect">
+          <p class="text-inside-custom h3">Technical Expert</p>
+          <div class="row text-secondary">
+            <div class="col-sm">
+              <p class="text-inside-custom h4">Apple Inc.</p>
+            </div>
+            <div class="col-sm">
+              <p class="text-inside-custom h5 text-sm-right">
+                07/2018 - present
+              </p>
+            </div>
+          </div>
+          <p class="text-inside-custom">
+            Currently, I work at Apple as a Technical Expert. I provide
+            troubleshooting for customers' devices with hardware or software
+            issues. I also directly repair iOS devices experiencing hardware
+            failures.
+          </p>
+        </div>
+
+        <hr class="my-5" />
+        <div class="custom-work-sect">
+          <p class="text-inside-custom h3">Programming Tutor</p>
+          <div class="row text-secondary">
+            <div class="col-sm">
+              <p class="text-inside-custom h4">
+                Howard Community College
+              </p>
+            </div>
+            <div class="col-sm">
+              <p class="text-inside-custom h5 text-sm-right">
+                02/2020 - 05/2020
+              </p>
+            </div>
+          </div>
+          <p class="text-inside-custom">
+            I tutored computer science and information technology students with
+            coursework related to programming concepts like object-oriented
+            programming (OOP), data serialization, etc. I taught students using
+            C++, Java, Python, and Matlab.
+          </p>
+        </div>
+        <hr class="my-5" />
+        <div class="custom-work-sect">
+          <p class="text-inside-custom h3">Enrichment Program Tutor</p>
+
+          <div class="row text-secondary">
+            <div class="col-sm">
+              <p class="text-inside-custom h4">Coder Kids Inc.</p>
+            </div>
+            <div class="col-sm">
+              <p class="text-inside-custom h5 text-sm-right">
+                08/2019 - 11/2019
+              </p>
+            </div>
+          </div>
+
+          <p class="text-inside-custom">
+            For the fall semester of 2019, I was a tutor at Coder Kids over at
+            McLean, VA, assisting young kids and early teens learn about
+            programming through after-school sessions.
+          </p>
+        </div>
+        <hr class="my-5" />
+        <div class="custom-work-sect">
+          <p class="text-inside-custom h3">Community Manager</p>
+
+          <div class="row text-secondary">
+            <div class="col-sm">
+              <p class="text-inside-custom h4">User Experience Society</p>
+            </div>
+            <div class="col-sm">
+              <p class="text-inside-custom h5 text-sm-right">
+                02/2017 - 12/2017
+              </p>
+            </div>
+          </div>
+
+          <p class="text-inside-custom">
+            I was a manager in UXS for strategic partnerships. I handled our
+            communications with other student-run organizations that shared the
+            same passion for design and tech. I also mentored other junior
+            designers in the organization.
+          </p>
+        </div>
+
+        <hr class="my-5" />
+        <div class="custom-work-sect">
+          <p class="text-inside-custom h3">Digital Marketing Intern</p>
+
+          <div class="row text-secondary">
+            <div class="col-sm">
+              <p class="text-inside-custom h4">International Student Group</p>
+            </div>
+            <div class="col-sm">
+              <p class="text-inside-custom h5 text-sm-right">
+                05/2017 - 08/2017
+              </p>
+            </div>
+          </div>
+
+          <p class="text-inside-custom">
+            Optimized visibility and traffic of our company's website, utilizing
+            SEO management systems. During this time, I was able to seed 50
+            external websites and possible business partners in the education
+            sector.
+          </p>
+        </div>
+        <hr class="my-5" />
+      </div>
+    </section>
+
+    <footer
+      id="Connect"
+      class="container-fluid mt-5 pb-5 bg-dark text-white text-center"
+    >
+      <p class="h1 mb-5 pt-3">Connect with me.</p>
+      <p>
+        Have a project in mind, or maybe an idea for an app? <br />
+        Reaching out is as easy as hitting me up on my socials or sending me an
+        email.
+      </p>
+      <a
+        class="btn btn-social-icon btn-twitter text-white"
+        href="https://twitter.com/SageGarcia_"
+      >
+        <span class="fa fa-twitter"></span>
+      </a>
+      <a
+        class="btn btn-social-icon btn-google text-white"
+        href="mailto:sage.garcia@obf.ateneo.edu"
+      >
+        <span class="fa fa-google"></span>
+      </a>
+      <a
+        class="btn btn-social-icon btn-linkedin text-white"
+        href="https://www.linkedin.com/in/sagegarcia/"
+      >
+        <span class="fa fa-linkedin"></span>
+      </a>
+      <a
+        class="btn btn-social-icon btn-github text-white"
+        href="https://github.com/sagerg"
+      >
+        <span class="fa fa-github"></span>
+      </a>
+      <p class="text-secondary mt-3">
+        Copyright © 2020 Sage Garcia, All rights reserved.
+      </p>
+    </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
