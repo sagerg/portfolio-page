@@ -18,17 +18,18 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -37,7 +38,9 @@
     <nav
       class="navbar sticky-top navbar-expand-lg navbar-light bg-light mb-5 shadow-sm"
     >
-      <a class="navbar-brand" href="/index.html">. . /</a>
+      <a class="navbar-brand nav-logo pr-2 pl-2 rounded" href="/index.html"
+        >SG</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -53,13 +56,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#Overview">Overview</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Work">Work Experience</a>
+            <a class="nav-link" href="#Process">Process</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Connect">Connect</a>
@@ -68,309 +71,252 @@
       </div>
     </nav>
 
-    <main id="Overview" class="container mb-5">
-      <code>$ git commit -m "welcome message"</code>
-      <h1 class="mb-5">
-        Hi, I'm Sage Garcia. I design web applications.<span
+    <main id="About" class="mb-5">
+      <h1 class="text-center pt-5 pb-5">
+        Hi! I'm Sage Garcia. I code & design things.<span
           class="blinking-span-el text-primary"
           >|</span
         >
       </h1>
-
-      <code>$ git log</code>
-      <h3>I am...</h3>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          a CS undergraduate interested in:
-          <strong>full-stack development, UI/UX design, and data science</strong
-          >.
-        </li>
-        <li class="list-group-item">
-          experienced with front-end tools that I've personally used on past
-          projects like:
-          <strong>CSS3, Bootstrap, SASS, jQuery, and Node</strong>.
-        </li>
-        <li class="list-group-item">
-          focused on learning new frameworks and tools at the moment with:
-          <strong>React, Angular, Vue.js, k8s, Docker, Postgres</strong>, etc.
-        </li>
-        <li class="list-group-item">
-          proficient in several other programming languages such as:
-          <strong>C++, Java, Swift, and Python</strong>.
-        </li>
-      </ul>
-
-      <code>:exit()</code>
+      <div class="container pb-5">
+        <div class="row feature">
+          <div class="col-md-6" data-aos="fade-right">
+            <img src="img/memoji.png" class="img-fluid" alt="memoji" />
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <p>
+              Currently, I'm a <code>Computer Science</code> major at the
+              <a href="https://www.umbc.edu/"
+                >University of Maryland Baltimore County</a
+              >. I started my journey in software development while I was in
+              Manila, participating in organizations such as
+              <a href="http://www.aiesecph.org/">AIESEC</a>,
+              <a href="https://youthhack.net/">YOUTH HACK</a>,
+              <a href="https://misa.org.ph/"
+                >Management Information Systems Asssociation</a
+              >, and <a href="https://uxph.org/">UX Philippines</a>.
+            </p>
+            <p>
+              Something I enjoyed more than coding was collaborating with people
+              as well, whether they were students, mentors, or professionals.
+              This lead me to join
+              <a href="https://uxsociety.org/">User Experience Society</a> as a
+              Community Manager. This allowed me to build partnerships with
+              other organizations and to meet new people alike.
+            </p>
+            <p>
+              I also enjoyed educating people who were eager to learn more about
+              software development. So I decided to join
+              <a href="https://coder-kids.com/">Coder Kids</a> over at McLean,
+              VA for the Fall of 2019. For the Spring of 2020, I became a
+              Teaching Assistant at my
+              <a href="https://www.howardcc.edu/">local community college</a>,
+              tutoring students about languages such as C++, Java, and Python.
+            </p>
+            <p>
+              Outside of coding, I spend my freetime running, weightlifting, or,
+              occasionally, hiking if it's summertime. If I'm indoors, I'll be
+              on my guitar or in the kitchen making something sweet. 🎂
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <section id="Projects" class="container-fluid mt-5 bg-dark">
-      <p class="h1 mb-5 pt-3 text-center text-light">Notable projects.</p>
-      <div class="card-deck">
-        <div class="card">
-          <img
-            src="/img/siklab-proto.png"
-            class="card-img-top"
-            alt="Prototype of Siklab Pilipinas' 2018 site."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Design: Youth Assembly 2018</h5>
-            <p class="card-text">
-              <a href="https://siklab.org.ph">Siklab Pilipinas'</a> annual Youth
-              Assembly in partnership with the UN. Along with designers from
-              User Experience Society, we prototyped their main website using
-              Sketch and InVision.
-            </p>
+    <section id="Projects" class="pt-5 bg-dark">
+      <h1 class="pb-5 pt-3 text-center text-light">Notable Projects</h1>
+      <div class="container text-light pb-5 pt-5">
+        <div class="row feature" data-aos="fade-left">
+          <div class="order-md-3 col-md-6">
+            <img
+              src="img/siklab-proto.png"
+              class="card-img"
+              alt="prototype of Siklab Pilipinas' 2018 site"
+            />
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="/img/pwmanager-proto.png"
-            class="card-img-top"
-            alt="C++ script screenshot."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Code: Password Manager</h5>
-            <p class="card-text">
-              Application written in C++. Uses data serialization according to
-              <a href="https://isocpp.org/wiki/faq/serialization"
-                >ISO standard</a
-              >
-              and encrypts it to a .txt using a string argument as a key.
+          <div class="order-md-9 col-md-6 pt-3">
+            <h2>Youth Assembly 2018</h2>
+            <p>
+              The Youth Assembly is an annual event hosted by Siklab Pilipinas
+              in partnership with the U.N. aiming to equip young Filipinos with
+              the skills and opportunities to change their communities. For
+              their 2018 event, I designed the content and theme direction for
+              the website, working alongside professional designers.
             </p>
             <a
-              href="https://github.com/sagerg/cmd-line-tools"
-              class="btn btn-dark"
-              >GitHub</a
-            >
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="/img/cmsy168-proto.png"
-            class="card-img-top"
-            alt="Screenshot of course project website."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Spreading Mental Health Awareness</h5>
-            <p class="card-text">
-              This was a course project in my web development class. We were
-              tasked to create a website for a cause. Tools were limited only to
-              HTML and CSS.
-            </p>
-            <a
-              href="https://phpmysql.howardcc.edu/Users/sgarcia6599/"
               class="btn btn-primary"
-              >Live Demo</a
-            >
+              href="https://siklab.org.ph"
+              role="button"
+              >Siklab Pilipinas <span class="fa fa-external-link"></span
+            ></a>
           </div>
         </div>
       </div>
-
-      <hr class="my-5 border-secondary" />
-
-      <p class="h2 mb-5 pt-3 text-center text-light">Other ventures.</p>
-      <div class="card-deck">
-        <div class="card">
-          <img
-            src="/img/apple-proto.png"
-            class="card-img"
-            alt="Web app showcasing a variety of AppleCare services."
-          />
-          <div class="card-body">
-            <p class="card-text">
-              <a href="public/LearnCreateShare/index.html">Web app</a>
-              showcasing a variety of AppleCare services.
-            </p>
+      <div class="container text-light pb-5 pt-5">
+        <div class="row feature" data-aos="fade-right">
+          <div class="order-md-9 col-md-6">
+            <img src="/img/cmsy168-proto.png" class="card-img" />
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="/img/java-proto.png"
-            class="card-img"
-            alt="Prototyping of client website using Sketch and InVision."
-          />
-          <div class="card-body">
-            <p class="card-text">
-              Prototyping of client website using Sketch and InVision.
+          <div class="order-md-3 col-md-6 pt-3">
+            <h2>The Health Journal</h2>
+            <p>
+              The Health Journal is a project aimed at spreading mental health
+              awareness. It provides helpful suggestions and tips for creating a
+              stress-free and productive environment for oneself. Originally,
+              this was a course project from one of my classes.
             </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="/img/gallery-proto.png"
-            class="card-img"
-            alt="Masonry photo gallery with custom scrolling"
-          />
-          <div class="card-body">
-            <p class="card-text">
-              Masonry photo gallery with custom scrolling speed using
-              JavaScript.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="/img/js-proto.png"
-            class="card-img"
-            alt="Art boards from initial prototype of my project TheHealthJournal."
-          />
-          <div class="card-body">
-            <p class="card-text">
-              Art boards from initial prototype of my project TheHealthJournal.
-            </p>
+            <a
+              class="btn btn-primary"
+              href="https://phpmysql.howardcc.edu/Users/sgarcia6599/"
+              role="button"
+              >The Health Journal <span class="fa fa-external-link"></span
+            ></a>
           </div>
         </div>
       </div>
-
+      <div class="container text-light pb-5 pt-5">
+        <div class="row feature" data-aos="fade-left">
+          <div class="order-md-3 col-md-6">
+            <img src="img/apple-proto.png" class="card-img" />
+          </div>
+          <div class="order-md-9 col-md-6 pt-3">
+            <h2>AppleCare: Bitesized</h2>
+            <p>
+              Bitesized is a website showcasing the variety of AppleCare
+              services that one can get from Apple. I built this small AppleCare
+              guide to assist my co-technicians at my store. Tools used are
+              simply: HTML, CSS, and JavaScript.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="public/LearnCreateShare/"
+              role="button"
+              >Live Demo <span class="fa fa-external-link"></span
+            ></a>
+          </div>
+        </div>
+      </div>
       <div class="text-center pt-5 pb-5">
         <a
           class="btn btn-outline-light"
           href="https://github.com/sagerg"
           role="button"
-          >More projects at my GitHub</a
-        >
+          >More projects at my GitHub <span class="fa fa-external-link"></span
+        ></a>
       </div>
     </section>
 
-    <section id="Work" class="container mt-5">
-      <p class="h1 mb-5 pt-3 text-center">
-        Professional experiences along the years.
-      </p>
-      <div class="div-with-left-border-line">
-        <hr class="my-5" />
-
-        <div class="custom-work-sect">
-          <p class="text-inside-custom h3">Technical Expert</p>
-          <div class="row text-secondary">
-            <div class="col-sm">
-              <p class="text-inside-custom h4">Apple Inc.</p>
-            </div>
-            <div class="col-sm">
-              <p class="text-inside-custom h5 text-sm-right">
-                Jul 2018 - Present
+    <section id="Process">
+      <div class="container pb-5">
+        <h1 class="pb-5 pt-5 text-center">Building Process</h1>
+        <div class="card-deck">
+          <div
+            class="card border-primary"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <img
+              src="/img/js-proto.png"
+              class="card-img"
+              alt="prototyping of website"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-primary">RESEARCH:</strong> I ideate
+                solutions by considering clients' goals and recognizing
+                technologies appropriate for the project.
               </p>
             </div>
           </div>
-          <p class="text-inside-custom">
-            Currently, I work at Apple as a Technical Expert. I provide
-            troubleshooting for customers' devices with hardware or software
-            issues. I also directly repair iOS devices experiencing hardware
-            failures.
-          </p>
-        </div>
-
-        <hr class="my-5" />
-
-        <div class="custom-work-sect">
-          <p class="text-inside-custom h3">Programming Tutor</p>
-          <div class="row text-secondary">
-            <div class="col-sm">
-              <p class="text-inside-custom h4">
-                Howard Community College
-              </p>
-            </div>
-            <div class="col-sm">
-              <p class="text-inside-custom h5 text-sm-right">
-                Feb 2020 - May 2020
+          <div
+            class="card border-danger"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
+            <img
+              src="img/gallery-proto.png"
+              class="card-img"
+              alt="Masonry photo gallery with custom scrolling"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-danger">DESIGN:</strong> I create meaningful
+                interactions that utilize best practices to engage users to be
+                successful in their tasks.
               </p>
             </div>
           </div>
-          <p class="text-inside-custom">
-            I tutored computer science and information technology students with
-            coursework related to programming concepts like object-oriented
-            programming (OOP), data serialization, etc. I taught students using
-            C++, Java, Python, and Matlab.
-          </p>
-        </div>
-
-        <hr class="my-5" />
-
-        <div class="custom-work-sect">
-          <p class="text-inside-custom h3">Enrichment Program Tutor</p>
-          <div class="row text-secondary">
-            <div class="col-sm">
-              <p class="text-inside-custom h4">Coder Kids Inc.</p>
-            </div>
-            <div class="col-sm">
-              <p class="text-inside-custom h5 text-sm-right">
-                Aug 2019 - Nov 2019
+          <div
+            class="card border-info"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <img
+              src="img/code-proto.png"
+              class="card-img"
+              alt="Art boards from initial prototype of my project TheHealthJournal."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-info">DEVELOPMENT:</strong> I build products
+                with focus on sound infrastructure, scalability, and good user
+                experience.
               </p>
             </div>
           </div>
-          <p class="text-inside-custom">
-            For the fall semester of 2019, I was a tutor at Coder Kids over at
-            McLean, VA, assisting young kids and early teens learn about
-            programming through after-school sessions.
-          </p>
         </div>
+      </div>
+      <div class="container pb-5">
+        <h2 class="text-secondary pt-5 pb-3" data-aos="fade-right">
+          Frameworks And Tools I Use
+        </h2>
+        <ul class="list-group list-group-flush">
+          <li
+            class="list-group-item"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <span class="fa fa-gear"></span>
+            <strong>DEVELOPMENT:</strong>
+            HTML, CSS 3, Sass, Bootstrap 4, React, Django, npm, and NodeJS.
+          </li>
+          <li
+            class="list-group-item"
+            data-aos="fade-right"
+            data-aos-duration="1250"
+          >
+            <span class="fa fa-pencil"></span>
+            <strong>WIREFRAMING:</strong> Sketch, InVision, and Gimp.
+          </li>
 
-        <hr class="my-5" />
-
-        <div class="custom-work-sect">
-          <p class="text-inside-custom h3">Community Manager</p>
-          <div class="row text-secondary">
-            <div class="col-sm">
-              <p class="text-inside-custom h4">User Experience Society</p>
-            </div>
-            <div class="col-sm">
-              <p class="text-inside-custom h5 text-sm-right">
-                Feb 2017 - Dec 2017
-              </p>
-            </div>
-          </div>
-          <p class="text-inside-custom">
-            I was a manager in UXS for strategic partnerships. I handled our
-            communications with other student-run organizations that shared the
-            same passion for design and tech. I also mentored other junior
-            designers in the organization.
-          </p>
-        </div>
-
-        <hr class="my-5" />
-
-        <div class="custom-work-sect">
-          <p class="text-inside-custom h3">Digital Marketing Intern</p>
-          <div class="row text-secondary">
-            <div class="col-sm">
-              <p class="text-inside-custom h4">International Student Group</p>
-            </div>
-            <div class="col-sm">
-              <p class="text-inside-custom h5 text-sm-right">
-                May 2017 - Aug 2017
-              </p>
-            </div>
-          </div>
-          <p class="text-inside-custom">
-            Optimized visibility and traffic of our company's website, utilizing
-            SEO management systems. During this time, I was able to seed 50
-            external websites and possible business partners in the education
-            sector.
-          </p>
-        </div>
-
-        <hr class="my-5" />
+          <li
+            class="list-group-item"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <span class="fa fa-keyboard-o"></span>
+            <strong>LANGUAGES:</strong>
+            JavaScript, C++, Java, and Python.
+          </li>
+        </ul>
       </div>
     </section>
 
     <footer
       id="Connect"
-      class="container-fluid mt-5 pb-5 bg-dark text-white text-center"
+      class="container-fluid pt-5 pb-5 bg-dark text-white text-center"
     >
-      <p class="h1 mb-5 pt-3">Connect with me.</p>
+      <h1 class="pb-5 pt-3 text-center">Connect With Me</h1>
       <p>
         Have a project in mind, or maybe an idea for an app? <br />
-        Reach out to me through my socials below or send me an email.
+        Let's chat! Reach out to me through my socials below or shoot me an
+        email.
       </p>
       <a
-        class="btn btn-social-icon btn-twitter text-white"
-        href="https://twitter.com/SageGarcia_"
+        class="btn btn-social-icon btn-linkedin text-white"
+        href="https://www.linkedin.com/in/sagegarcia/"
       >
-        <span class="fa fa-twitter"></span>
+        <span class="fa fa-linkedin"></span>
       </a>
       <a
         class="btn btn-social-icon btn-google text-white"
@@ -379,40 +325,19 @@
         <span class="fa fa-envelope"></span>
       </a>
       <a
-        class="btn btn-social-icon btn-linkedin text-white"
-        href="https://www.linkedin.com/in/sagegarcia/"
-      >
-        <span class="fa fa-linkedin"></span>
-      </a>
-      <a
         class="btn btn-social-icon btn-github text-white"
         href="https://github.com/sagerg"
       >
         <span class="fa fa-github"></span>
       </a>
-      <p class="text-secondary mt-3">
-        Copyright © 2020 Sage Garcia, All rights reserved.
+      <p class="text-secondary pt-5">
+        Copyright © 2020 Sage Garcia. All rights reserved.
       </p>
     </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- TODO Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <!-- I know I know... I need to do this soon. -June -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -429,5 +354,26 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
