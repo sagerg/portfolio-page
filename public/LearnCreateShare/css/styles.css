@@ -44,11 +44,11 @@ body {
   margin-right: 5%;
   font-size: 18px;
 }
-.inline-styles-custom {
+/* .inline-styles-custom {
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: rgb(255, 112, 117); /* slightly lighter red */
-}
+  text-decoration-color: rgb(255, 112, 117); 
+} */
 .end {
   margin: 10%;
   font-size: 18px;
