@@ -1,25 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Projects from './Projects';
+import Socials from './Socials';
+import About from './About';
+import NavigationButtons from './NavigationButtons';
+import DarkModeToggle from './DarkModeToggle';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handler = this.handler.bind(this);
+    this.state = {
+      active: "about"
+    };
+  }
+
+  handler(e, view) {
+    this.setState({active: view});
+  } 
+  
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Container>
+            <DarkModeToggle />
+            <NavigationButtons handler={this.handler}/>
+          </Container>
+          <div className="content">
+            {this.state.active === "about" && <About />}
+            {this.state.active === "socials" && <Socials />}
+            {this.state.active === "projects" && <Projects />}
+          </div>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
