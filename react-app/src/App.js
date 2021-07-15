@@ -1,12 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import Projects from './Projects';
 import Socials from './Socials';
 import About from './About';
 import NavigationButtons from './NavigationButtons';
 import DarkModeToggle from './DarkModeToggle';
+
+const TRADEMARK = `
+© 2020 Sage Garcia
+`;
+
+const SECTIONS = [
+  "about",
+  "socials",
+  "projects"
+]
 
 class App extends React.Component {
   constructor(props) {
@@ -25,16 +33,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Container>
-            <DarkModeToggle />
-            <NavigationButtons handler={this.handler}/>
-          </Container>
+          <DarkModeToggle />
+          <NavigationButtons handler={this.handler}/>
           <div className="content">
-            {this.state.active === "about" && <About />}
-            {this.state.active === "socials" && <Socials />}
-            {this.state.active === "projects" && <Projects />}
+            {this.state.active === SECTIONS[0] && <About />}
+            {this.state.active === SECTIONS[1] && <Socials />}
+            {this.state.active === SECTIONS[2] && <Projects />}
           </div>
         </header>
+        <footer>{TRADEMARK}</footer>
       </div>
     );
   }

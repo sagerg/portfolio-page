@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+img {
+  max-height:100%; 
+  max-width:100%;
+  border-radius: 10px;
+}
+
+footer {
+  position:fixed;
+  bottom:5px;
+  right:5px;
+}
+
 body.light-mode {
   background-color: #fff;
   color: #333;
