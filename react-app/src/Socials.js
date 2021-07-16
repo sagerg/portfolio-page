@@ -3,34 +3,42 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Button, ButtonGroup } from '@material-ui/core';
+import { Button, ButtonGroup, Typography } from '@material-ui/core';
 
-const URL = {
-  "github": "https://github.com/sagerg",
-  "linkedin": "https://www.linkedin.com/in/sagegarcia/",
-  "twitter": "https://twitter.com/SageGarcia_",
-  "email": "mailto:sage.garcia@umbc.edu"
+const CONTENT = {
+  "github": 
+    {
+      "url": "https://github.com/sagerg",
+      "title": "github.com/sagerg",
+      "icon": <GitHubIcon />
+    },
+  "linkedin": 
+    {
+      "url": "https://www.linkedin.com/in/sagegarcia/",
+      "title": "linkedin.com/in/sagegarcia",
+      "icon": <LinkedInIcon />
+    },
+  "twitter": 
+    {
+      "url": "https://twitter.com/SageGarcia_",
+      "title": "twitter.com/SageGarcia_",
+      "icon": <TwitterIcon />
+    },
+  "email": 
+    {
+      "url": "mailto:sage.garcia@umbc.edu",
+      "title": "sage.garcia@umbc.edu",
+      "icon": <EmailIcon />
+    }
 };
 
-const TITLE = {
-  "github": "github.com/sagerg",
-  "linkedin": "linkedin.com/in/sagegarcia/",
-  "twitter": "twitter.com/SageGarcia_",
-  "email": "sage.garcia@umbc.edu"
-}
-
-const HEADER = `
-Let's chat
-`;
-
-const CONTENT = `
-`;
+const HEADER = "Let's have a chat. Shoot me a tweet, DM, or an email below.";
 
 class Socials extends React.Component {
   render() {
     return (
       <div>
-        <h1>{HEADER}</h1>
+        <Typography variant="h5" gutterBottom>{HEADER}</Typography>
         <div className="content">
           <ButtonGroup
             orientation="vertical"
@@ -38,22 +46,16 @@ class Socials extends React.Component {
             aria-label="vertical contained primary button group"
             variant="text"
           >
-            <Button href={URL["github"]}>
-              <GitHubIcon />
-              &#160;{TITLE["github"]}
-            </Button>
-            <Button href={URL["linkedin"]}>
-              <LinkedInIcon />
-              &#160;{TITLE["linkedin"]}
-            </Button>
-            <Button href={URL["twitter"]}>
-              <TwitterIcon />
-              &#160;{TITLE["twitter"]}
-            </Button>
-            <Button href={URL["email"]}>
-              <EmailIcon />
-              &#160;{TITLE["email"]}
-            </Button>
+            {
+              Object.keys(CONTENT).map((key, index) => {
+                return (
+                  <Button key={index} href={CONTENT[key]["url"]}>
+                    {CONTENT[key]["icon"]}
+                    &#160;{CONTENT[key]["title"]}
+                  </Button>
+                );
+              })
+            }
           </ButtonGroup>
         </div>
       </div>

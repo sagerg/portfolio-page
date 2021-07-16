@@ -1,14 +1,15 @@
 .App {
   text-align: center;
+  margin-top: 20px;
 }
 
-img {
+.App img {
   max-height:100%; 
   max-width:100%;
   border-radius: 10px;
 }
 
-footer {
+.App footer {
   position:fixed;
   bottom:5px;
   right:5px;

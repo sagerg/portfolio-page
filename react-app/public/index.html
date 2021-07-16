@@ -29,7 +29,8 @@
     <title>React App</title>
   </head>
   <script>
-    localStorage.clear();
+    // reset darkMode value in user's localStorage refresh occurs.
+    localStorage.setItem('darkMode', 'true');
   </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

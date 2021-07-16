@@ -5,16 +5,17 @@ import Socials from './Socials';
 import About from './About';
 import NavigationButtons from './NavigationButtons';
 import DarkModeToggle from './DarkModeToggle';
+import '@fontsource/roboto';
 
 const TRADEMARK = `
-© 2020 Sage Garcia
+© 2021 Sage Garcia
 `;
 
 const SECTIONS = [
   "about",
   "socials",
   "projects"
-]
+];
 
 class App extends React.Component {
   constructor(props) {
