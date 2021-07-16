@@ -42,7 +42,7 @@ class App extends React.Component {
             {this.state.active === SECTIONS[2] && <Projects />}
           </div>
         </header>
-        <footer>{TRADEMARK}</footer>
+        <footer>{/*TRADEMARK*/}</footer>
       </div>
     );
   }

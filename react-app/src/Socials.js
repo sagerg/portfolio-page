@@ -44,7 +44,7 @@ class Socials extends React.Component {
             orientation="vertical"
             color="secondary"
             aria-label="vertical contained primary button group"
-            variant="text"
+            variant="outlined"
           >
             {
               Object.keys(CONTENT).map((key, index) => {

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
-import photo from './common/photo.jpeg'
+import photo from './common/photo.jpeg';
+import TextLoop from "react-text-loop";
 
 const HEADER = `
-Hi there, I'm Sage
+Hi there, I'm 
 `;
 
 const CONTENT = `
@@ -18,13 +19,26 @@ class About extends React.Component {
     return (
       <div>
         <Container>
-          <Typography variant="h5" gutterBottom>{HEADER}</Typography>
           <Grid container spacing={5}>
-            <Grid item lg={4} md={6} xs={12}>
+            <Grid item lg={6} md={6} xs={12}>
               <Container><img src={photo} alt="author"></img></Container>
             </Grid>
-            <Grid item lg={8} md={6} xs={12}>
-              <Container><Typography variant="body1">{CONTENT}</Typography></Container>
+            <Grid item lg={6} md={6} xs={12}>
+              <Container>
+                <Typography variant="h5" gutterBottom>
+                  {HEADER}
+                  <TextLoop interval={3500}>
+                    <span>Sage Garcia!</span>
+                    <span>an aspiring developer</span>
+                    <span>a UX enthusiast</span>
+                    <span>a budding designer</span>
+                    <span>a tech geek</span>
+                    <span>a webcomic nerd</span>
+                  </TextLoop>
+                  <span className="blinking-span-el text-primary" style={{color: '#f44336'}}> | </span>
+                </Typography>
+                <Typography variant="body1">{CONTENT}</Typography>
+              </Container>
             </Grid>
           </Grid>
         </Container>

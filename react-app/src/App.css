@@ -10,10 +10,15 @@
 }
 
 .App footer {
-  position:fixed;
-  bottom:5px;
   right:5px;
+  bottom:5px;
 }
+
+.App .nav {
+  margin-bottom:20px;
+}
+
+/* For dark mode */
 
 body.light-mode {
   background-color: #fff;
@@ -24,4 +29,20 @@ body.light-mode {
 body.dark-mode {
   background-color: #1a1919;
   color: #999;
+}
+
+/* Blinking cursor */
+.blinking-span-el {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
