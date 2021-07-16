@@ -11,11 +11,11 @@ const TRADEMARK = `
 © 2021 Sage Garcia
 `;
 
-const SECTIONS = [
-  "about",
-  "socials",
-  "projects"
-];
+const SECTIONS = {
+  "about": <About />,
+  "socials": <Socials />,
+  "projects": <Projects />
+};
 
 class App extends React.Component {
   constructor(props) {
@@ -37,9 +37,7 @@ class App extends React.Component {
           <DarkModeToggle />
           <NavigationButtons handler={this.handler}/>
           <div className="content">
-            {this.state.active === SECTIONS[0] && <About />}
-            {this.state.active === SECTIONS[1] && <Socials />}
-            {this.state.active === SECTIONS[2] && <Projects />}
+            {SECTIONS[this.state.active]}
           </div>
         </header>
         <footer>{/*TRADEMARK*/}</footer>
