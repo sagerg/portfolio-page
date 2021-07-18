@@ -1,30 +1,26 @@
 import React from 'react';
 import { Container, Typography, Paper } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
-import Siklab from './common/siklab.png';
-import WebDev from './common/webdev.png';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import CallMadeIcon from '@material-ui/icons/CallMade';
 import { Chip } from '@material-ui/core';
 
 const HEADER = `
-Notable Projects
+Personal Projects
 `;
 
 const CONTENT = {
   "portfolio": 
     {
-      "title": "Portfolio Website",
+      "title": "2021 Portfolio",
       "desc": `
-      My portfolio website was developed using React, React Hooks, and Material UI. 
+      My portfolio website was developed using the React framework and Material UI. 
       It's currently hosted using GitHub Pages.
-      Before deployment, unit testing was done using the React library Jest.
+      Before deployment, unit testing was done using the testing framework Jest.
       `,
       "url": "https://github.com/sagerg/sagerg.github.io",
-      "btn": "Github Repo",
-      "alt": "photo of portfolio",
-      "photo": "",
+      "btn": "Source Code",
       "chips": 
         <div>
           <Chip label="REACT" style={{backgroundColor: '#61DBFB', color: '#1F232A'}}/>
@@ -36,47 +32,44 @@ const CONTENT = {
     {
       "title": "Siklab Pilipinas",
       "desc": `
-      In 2018, I co-lead the design team during the development of the project’s proof-of-concept, collaborating directly with the client and co-designers to develop the appropriate UI/UX direction.
+      I was one of two design leads during the development of Siklab Pilipinas' website in 2017, tasked with developing content direction.
+      UX mocks and UI prototypes were designed using Sketch and InVision
       `,
       "url": "https://siklab.org.ph/",
-      "btn": "Siklab Pilipinas",
-      "alt": "photo of siklab project",
-      "photo": Siklab,
+      "btn": "Official Siklab Page",
       "chips": 
         <div>
           <Chip label="SKETCH" style={{backgroundColor: '#F9A52C', color: '#FFF'}}/>
           {'  '}
-          <Chip label="HTML/CSS" style={{backgroundColor: '#F05629', color: '#FFF'}}/>
+          <Chip label="INVISION" style={{backgroundColor: '#FF3366', color: '#FFF'}}/>
         </div>
     },
   "health":
     {
       "title": "Health Journal",
       "desc": `
-      The Health Journal is aimed at spreading mental and physical health awareness.
-      This website provides helpful online posts for creating a balanced and productive environment for anyone to stay and work in.
+      The Health Journal website was built using standard HTML and CSS.
+      It is currently hosted in a web server using MySQL at Howard Community College.
+      UI responsiveness and accessibility were the main focus.
       `,
       "url": "https://phpmysql.howardcc.edu/Users/sgarcia6599/",
-      "btn": "The Health Journal",
-      "alt": "photo of health journal project",
-      "photo": WebDev,
+      "btn": "Go To Page",
       "chips": 
         <div>
-          <Chip label="SKETCH" style={{backgroundColor: '#F9A52C', color: '#FFF'}}/>
+          <Chip label="HTML 5" style={{backgroundColor: '#F05629', color: '#FFF'}}/>
           {'  '}
-          <Chip label="HTML/CSS" style={{backgroundColor: '#F05629', color: '#FFF'}}/>
+          <Chip label="CSS 3" style={{backgroundColor: '#2965F1', color: '#FFF'}}/>
         </div>
     },
   "pass_manager":
     {
       "title": "Password Manager",
       "desc": `
-      Command line tool, written in C++ for UNIX systems, parses account username and passwords. Securely encrypts data locally using Base64 encoding and an implementation of Vigenère Cipher.
+      A command line tool written in C++ for macOS but is portable to any other UNIX based operating systems.
+      Securely encrypts passwords using Base64 encoding and a C++ module for Vigenère Cipher.
       `,
       "url": "https://github.com/sagerg/cmd-line-tools#password-manager",
-      "btn": "Github Repo",
-      "alt": "photo of pass manager",
-      "photo": "",
+      "btn": "Source Code",
       "chips": 
       <div>
         <Chip label="C++" />
@@ -101,8 +94,6 @@ class InnerContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      photo: this.props.photo,
-      altText: this.props.altText,
       mainContent: this.props.mainContent,
       btnName: this.props.btnName,
       url: this.props.url
@@ -111,15 +102,16 @@ class InnerContent extends React.Component {
 
   render() {
     return (
-      <div style={{marginTop: '10px'}}>
-            <Container>
-              {/* <img src={this.state.photo} alt={this.state.altText}></img> */}
-              <Typography variant="body1" gutterBottom>{this.state.mainContent}</Typography>
-              <Button color="secondary" variant="text" href={this.state.url}>
-                {this.state.btnName}&#160;
-                <CallMadeIcon />
-              </Button>
-            </Container>
+      <div style={{marginTop: '20px'}}>
+      {/* whitespace between headers and innerContent */}
+        <Container>
+          {/* <img src={this.state.photo} alt={this.state.altText}></img> */}
+          <Typography variant="body1" gutterBottom>{this.state.mainContent}</Typography>
+          <Button color="secondary" variant="text" href={this.state.url}>
+            {this.state.btnName}&#160;
+            <CallMadeIcon />
+          </Button>
+        </Container>
       </div>
     );
   }
@@ -142,8 +134,6 @@ export default function Projects() {
                       {CONTENT[key]["chips"]}
                     </Typography>
                     <InnerContent
-                      photo = {CONTENT[key]["photo"]}
-                      altText = {CONTENT[key]["alt"]}
                       mainContent = {CONTENT[key]["desc"]}
                       btnName = {CONTENT[key]["btn"]}
                       url = {CONTENT[key]["url"]}
