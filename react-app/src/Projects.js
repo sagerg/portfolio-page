@@ -5,19 +5,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import CallMadeIcon from '@material-ui/icons/CallMade';
 import { Chip } from '@material-ui/core';
+import Fade from '@material-ui/core/Fade';
 
-const HEADER = `
-Personal Projects
-`;
+const HEADER = "Personal Projects";
 
 const CONTENT = {
   "portfolio": 
     {
       "title": "2021 Portfolio",
       "desc": `
-      My portfolio website was developed using the React framework and Material UI. 
+      My portfolio website is a single-page application (SPA) developed using React and Material UI. 
       It's currently hosted using GitHub Pages.
-      Before deployment, unit testing was done using the testing framework Jest.
+      Before deployment, unit testing was done using Enzyme and Jest.
       `,
       "url": "https://github.com/sagerg/sagerg.github.io",
       "btn": "Source Code",
@@ -32,7 +31,7 @@ const CONTENT = {
     {
       "title": "Siklab Pilipinas",
       "desc": `
-      I was one of two design leads during the development of Siklab Pilipinas' website in 2017, tasked with developing content direction.
+      I was one of two creative leads during the development of Siklab Pilipinas' website in 2017, tasked with developing content direction.
       UX mocks and UI prototypes were designed using Sketch and InVision
       `,
       "url": "https://siklab.org.ph/",
@@ -122,7 +121,11 @@ export default function Projects() {
   return (
     <div>
       <Container>
-        <Typography variant="h4" gutterBottom>{HEADER}</Typography>
+        <Typography variant="h4" gutterBottom>
+          {HEADER}
+          <span className="blinking-span-el text-primary" style={{color: '#f44336'}}>|</span>
+        </Typography>
+        <Fade in timeout={500}>
           <Grid container spacing={3}>
           {
             Object.keys(CONTENT).map((key, index) => {
@@ -144,6 +147,7 @@ export default function Projects() {
             })
           }
           </Grid>
+        </Fade>
       </Container>
     </div>
   );

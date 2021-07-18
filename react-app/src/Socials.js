@@ -4,6 +4,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Button, ButtonGroup, Typography } from '@material-ui/core';
+import Fade from '@material-ui/core/Fade';
 
 const CONTENT = {
   "github": 
@@ -32,14 +33,19 @@ const CONTENT = {
     }
 };
 
-const HEADER = "Let's have a chat. Shoot me a tweet, DM, or an email below.";
+const HEADER = "Let's have a chat. Shoot me a tweet, DM, or an email below";
 
 class Socials extends React.Component {
   render() {
     return (
       <div>
-        <Typography variant="h5" gutterBottom>{HEADER}</Typography>
+        
+        <Typography variant="h5" gutterBottom>
+          {HEADER}
+          <span className="blinking-span-el text-primary" style={{color: '#f44336'}}>|</span> 
+        </Typography>
         <div className="content">
+        <Fade in timeout={500}>
           <ButtonGroup
             orientation="vertical"
             color="secondary"
@@ -57,6 +63,7 @@ class Socials extends React.Component {
               })
             }
           </ButtonGroup>
+        </Fade>
         </div>
       </div>
     );
