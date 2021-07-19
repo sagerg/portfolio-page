@@ -18,7 +18,7 @@ const CONTENT = {
       It's currently hosted using GitHub Pages.
       Before deployment, unit testing was done using Enzyme and Jest.
       `,
-      "url": 'https://github.com/sagerg/portfolio-page/tree/master',
+      "url": 'https://github.com/sagerg/react-app',
       "btn": "Source Code",
       "chips": 
         <div>
