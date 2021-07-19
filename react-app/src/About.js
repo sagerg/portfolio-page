@@ -18,7 +18,7 @@ const INTRO_LOOP = [
   'a UI/UX enthusiast',
   'an Agile practitioner',
   'an OSS supporter',
-  'an AI & ML follower',
+  'an AI/ML follower',
 ];
 
 class About extends React.Component {
@@ -47,7 +47,7 @@ class About extends React.Component {
                 <Typography variant="body1">{CONTENT}</Typography>
                 <Button 
                   variant="contained" 
-                  href='https://github.com/sagerg/sagerg.github.io/blob/master/resume.pdf' 
+                  href='https://drive.google.com/drive/folders/1bxxtJBY2PnjHJT06OzvJkUtfW6BFflw-?usp=sharing' 
                   style={{marginTop: '30px'}}
                 >
                   Resume PDF

@@ -39,7 +39,6 @@ class Socials extends React.Component {
   render() {
     return (
       <div>
-        
         <Typography variant="h5" gutterBottom>
           {HEADER}
           <span className="blinking-span-el text-primary" style={{color: '#f44336'}}>|</span> 

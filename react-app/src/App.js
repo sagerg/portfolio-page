@@ -7,10 +7,6 @@ import NavigationButtons from './NavigationButtons';
 import DarkModeToggle from './DarkModeToggle';
 import '@fontsource/roboto';
 
-const TRADEMARK = `
-© 2021 Sage Garcia
-`;
-
 const SECTIONS = {
   "about": <About />,
   "socials": <Socials />,
@@ -40,7 +36,6 @@ class App extends React.Component {
             {SECTIONS[this.state.active]}
           </div>
         </header>
-        <footer>{/*TRADEMARK*/}</footer>
       </div>
     );
   }

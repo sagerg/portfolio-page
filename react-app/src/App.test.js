@@ -12,9 +12,7 @@ test('renders nav bar', () => {
 
 test('renders resume button', () => {
   render(<App />);
-  const linkElement = screen.getByText(
-    "Resume PDF"
-    );
+  const linkElement = screen.getByText("Resume PDF");
   expect(linkElement).toBeInTheDocument();
 });
 

@@ -34,8 +34,8 @@ const CONTENT = {
       I was one of two creative leads during the development of Siklab Pilipinas' website in 2017, tasked with developing content direction.
       UX mocks and UI prototypes were designed using Sketch and InVision
       `,
-      "url": "https://siklab.org.ph/",
-      "btn": "Official Siklab Page",
+      "url": "https://drive.google.com/drive/folders/1vLkLB9s4QhVuByBOK9D_qK9HOYuuTwLg?usp=sharing",
+      "btn": "Design Prototypes",
       "chips": 
         <div>
           <Chip label="SKETCH" style={{backgroundColor: '#F9A52C', color: '#FFF'}}/>
@@ -102,9 +102,7 @@ class InnerContent extends React.Component {
   render() {
     return (
       <div style={{marginTop: '20px'}}>
-      {/* whitespace between headers and innerContent */}
         <Container>
-          {/* <img src={this.state.photo} alt={this.state.altText}></img> */}
           <Typography variant="body1" gutterBottom>{this.state.mainContent}</Typography>
           <Button color="secondary" variant="text" href={this.state.url}>
             {this.state.btnName}&#160;
