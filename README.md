@@ -1,5 +1,7 @@
 # Portfolio Page [Version 2]
 
+>> [sagerg.github.io/react-app](https://sagerg.github.io/react-app/)
+
 ## Development
 
 Version 1 was developed using only HTML/CSS. Having to rely on Bootstrap and [AOS](https://michalsnik.github.io/aos/), it was difficult to maintain the code and to add dynamic features to the site. There was also some JavaScript bloat, making the page animations load very slowly on some machines on-scroll.
