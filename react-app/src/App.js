@@ -29,13 +29,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <DarkModeToggle />
-          <NavigationButtons handler={this.handler}/>
-          <div className="content">
-            {SECTIONS[this.state.active]}
-          </div>
-        </header>
+        <DarkModeToggle />
+        <NavigationButtons handler={this.handler}/>
+        <div className="content">
+          {SECTIONS[this.state.active]}
+        </div>
       </div>
     );
   }
