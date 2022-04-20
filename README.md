@@ -1,6 +1,6 @@
 # Portfolio Page [Version 2]
 
->> [sagerg.github.io/react-app](https://sagerg.github.io/react-app/)
+[sagerg.github.io/react-app](https://sagerg.github.io/react-app/)
 
 ## Development
 
