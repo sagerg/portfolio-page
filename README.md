@@ -1,4 +1,6 @@
 # Portfolio Page [Version 2]
+![Jekyll workflow](https://github.com/sagerg/react-app/actions/workflows/jekyll.yml/badge.svg)
+![Node.js workflow](https://github.com/sagerg/react-app/actions/workflows/node.js.yml/badge.svg)
 
 [sagerg.github.io/react-app](https://sagerg.github.io/react-app/)
 
