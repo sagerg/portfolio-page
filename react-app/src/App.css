@@ -1,0 +1,53 @@
+.App {
+  text-align:center;
+  margin-top:20px;
+}
+
+.App img {
+  max-height:100%; 
+  max-width:100%;
+  border-radius: 10px;
+}
+
+.App .nav {
+  margin-bottom:20px;
+}
+
+/* For dark mode */
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1a1919;
+  color: rgb(180, 180, 180);
+}
+
+/* Blinking cursor */
+
+.blinking-span-el {
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  -moz-animation: blink-animation 1s steps(5, start) infinite;
+  -o-animation: blink-animation 1s steps(5, start) infinite;
+  -ms-animation: blink-animation 1s steps(5, start) infinite;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
